@@ -10,7 +10,6 @@ def main(part):
         numbers = [int(n) for n in content[0].split(',')]
         board_list = [[int(n) for n in b.split()] for b in content[2:] if b != '\n']
         num_boards = len(board_list) // 5
-        num_nums = len(numbers)
         boards = np.array(board_list).reshape((num_boards, 5, 5))
 
     # Setting up the variables needed.
