@@ -8,9 +8,9 @@ def main(days):
         fish_per_day[age] += 1
 
     for day in range(days):
-        new_fish = fish_per_day[0]
+        new_fish = fish_per_day[0]  # Caching this value.
         for i in range(8):
-            fish_per_day[i] = fish_per_day[i + 1]  # Caching this value.
+            fish_per_day[i] = fish_per_day[i + 1]
         fish_per_day[6] += new_fish  # Fish having their timer reset.
         fish_per_day[8] = new_fish  # New fish created.
 
