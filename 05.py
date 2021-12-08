@@ -29,8 +29,8 @@ def main(part):
             diagram[line[0][1]][x_point] += 1  # y-row then x-column.
 
     # Marking the points for vertical lines.
-    d_lines = [xy for xy in h_v_lines if xy[0][0] == xy[1][0]]
-    for line in d_lines:
+    y_lines = [xy for xy in h_v_lines if xy[0][0] == xy[1][0]]
+    for line in y_lines:
         (start_end) = line[0][1], line[1][1]
         for y_point in range(min(start_end), max(start_end) + 1):
             diagram[y_point][line[0][0]] += 1
