@@ -31,7 +31,7 @@ def main():
     low_points = get_low_points()
 
     def traverse_basin(low_point):
-        """Traverses the heightmap from the low points, and finds basins that ar bound by height values of 9."""
+        """Traverses the heightmap from the low points, and finds basins that are bound by height values of 9."""
         # Used a set as some points where counting more than once.
         mapped, not_mapped = {(low_point[0], low_point[1])}, []
         not_mapped += [point for point in get_adjacent(low_point[0], low_point[1])[1]
