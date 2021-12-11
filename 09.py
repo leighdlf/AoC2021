@@ -56,7 +56,7 @@ def main():
     basins = get_basins()
 
     def three_largest_product():
-        """ Returns the product of the area/size of the three largest basins."""
+        """Returns the product of the area/size of the three largest basins."""
         area = [len(b) for b in basins]
         area.sort(reverse=True)
         return area[0] * area[1] * area[2]
