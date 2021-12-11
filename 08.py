@@ -21,7 +21,6 @@ def main(part):
             output_values = signal_patterns[i][1]
             unique_signals = signal_patterns[i][0]
 
-
             # filtering of the unique signals to ge the values that are initially knowable.
             one = list(filter(lambda x: len(x) == 2, unique_signals))[0]
             four = list(filter(lambda x: len(x) == 4, unique_signals))[0]
@@ -47,6 +46,7 @@ def main(part):
             six = {segment.copy().pop() for segment in [a, b, d, e, f, g]}
             nine = {segment.copy().pop() for segment in [a, b, c, d, f, g]}
 
+            # Matching cases.
             every_entry = ''
             for value in output_values:
                 value_str = ''
