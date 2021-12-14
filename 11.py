@@ -26,7 +26,7 @@ def main(part):
         return adjacent_locations
 
     def inc_by_uint(row, column):
-        """Increments the octopuses energy level."""
+        """Increments the octopuses' energy level."""
         array[row, column] += np.uint8(1)
 
     def first_increase():
@@ -37,7 +37,7 @@ def main(part):
 
     def flash(row, column):
         """Flashes an octopus if its energy level is 9+,
-        increments its neighbours energy levels by 1, then recursively flashes each neighbour.
+        increments its neighbours' energy levels by 1, then recursively flashes each neighbour.
         """
         if array[row][column] <= np.uint8(9) or has_flashed[row][column] == True:
             return
@@ -66,7 +66,7 @@ def main(part):
 
             nonlocal has_flashed
             if has_flashed.sum() == has_flashed.size:
-                print(step + 1)  # +1 to account for starting step offset.
+                print(f'{step + 1} was the step that had all octopuses flash simultaneously.')  # +1 to account for starting step offset.
                 break
             reset_flashed()
 
@@ -74,7 +74,7 @@ def main(part):
 
     step()
     if part == 1:
-        print(total_flashes)
+        print(f'There where {total_flashes} total flashes.')
 
 
 if __name__ == "__main__":
