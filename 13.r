@@ -1,4 +1,4 @@
-# Read data from imput, and set up which points to mark, and which axis and position to fold.
+# Read data from input, and set up which points to mark, and which axis and position to fold.
 library(stringr)
 dat <- readLines('data/13.txt')
 points <- str_match(dat, "(?<y>[0-9]+)[,](?<x>[0-9]+)")[, -1] |> na.omit(points)
