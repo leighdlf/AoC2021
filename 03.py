@@ -1,7 +1,7 @@
 import numpy as np
 from scipy import stats
 
-with open("03.txt", "r") as file:
+with open("data/03.txt", "r") as file:
     binary = np.array([[int(bit) for bit in line.strip("\n")] for line in file])
 
 def power_consumption():

@@ -2,7 +2,7 @@ import numpy as np
 
 
 def main(part):
-    with open("05.txt") as file:
+    with open("data/05.txt") as file:
         line_segments = \
             [
                 [[int(n) for n in line.split(',')] for line in lines.strip().split('->')]

@@ -4,7 +4,7 @@ import numpy as np
 def main(part):
     first_or_last_board = True if part == 1 else False
 
-    with open("04.txt") as file:
+    with open("data/04.txt") as file:
         # Opening the file and setting up the boards as a nDimensional np.array.
         content = file.readlines()
         numbers = [int(n) for n in content[0].split(',')]

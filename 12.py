@@ -1,7 +1,7 @@
 def main(part):
     def construct_nodes():
         """Constructs nodes, returns a dictionary with the node as the key and links as a list."""
-        with open("12.txt") as file:
+        with open("data/12.txt") as file:
             data = [tuple(line.strip().split('-')) for line in file.readlines()]
 
         caves_dict = {}

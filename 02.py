@@ -1,4 +1,4 @@
-with open("02.txt", "r") as file:
+with open("data/02.txt", "r") as file:
     instructions = [line.strip("\n").split(" ") for line in file]
 
 

@@ -1,5 +1,5 @@
 def main(days):
-    with open('06.txt') as file:
+    with open('data/06.txt') as file:
         ages = [int(n) for n in file.read().split(sep=',')]
 
     # index 0 to 8 represent the days, value the number of fish.

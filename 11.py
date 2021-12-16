@@ -2,7 +2,7 @@ import numpy as np
 
 
 def main(part):
-    with open("11.txt") as file:
+    with open("data/11.txt") as file:
         data = [[n for n in line.strip()] for line in file.readlines()]
     array = np.array(data, dtype=np.uint8)
     has_flashed = np.full_like(array, False, dtype=np.bool_)

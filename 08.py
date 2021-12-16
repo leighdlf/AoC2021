@@ -1,5 +1,5 @@
 def main(part):
-    with open('08.txt') as file:
+    with open('data/08.txt') as file:
         signal_patterns = \
             [
                 [[set(p for p in pattern) for pattern in patterns.strip().split()]

@@ -1,4 +1,4 @@
-with open("01.txt", "r") as file:
+with open("data/01.txt", "r") as file:
     data = [int(n) for n in file]
 
 

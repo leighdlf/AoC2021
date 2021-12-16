@@ -2,7 +2,7 @@ import numpy as np
 
 
 def main():
-    with open("09.txt") as file:
+    with open("data/09.txt") as file:
         data = [[n for n in line.strip()] for line in file.readlines()]
 
     array = np.array(data, dtype=np.int8)

@@ -1,5 +1,5 @@
 def main():
-    with open("10.txt") as file:
+    with open("data/10.txt") as file:
         data = [line.strip() for line in file.readlines()]
 
     open_close_dict = {'(': ')', '[': ']', '{': '}', '<': '>'}
